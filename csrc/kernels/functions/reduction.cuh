@@ -18,6 +18,7 @@ namespace cuda_functions {
     #define FLOAT_TYPE float
 #endif
 
+// Source: https://github.com/karpathy/llm.c/blob/llama3/dev/cuda/common.h#L29
 using reduction_func_t = FLOAT_TYPE (*) (FLOAT_TYPE);
 
 template<typename floatX,reduction_func_t warp_reduction>
