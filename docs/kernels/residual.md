@@ -1,9 +1,9 @@
 # `cuda_kernel::residual`
 
 Performs the residual addition operation analogous to `torch.add`:
-$$
+\[
 \mathbf{Y} = \mathbf{X} + \mathbf{R}
-$$
+\]
 where $\mathbf{X} \in \mathbb{R}^{N \times C}$ is the input and $\mathbf{R} \in \mathbb{R}^{N \times C}$ is the residual.
 
 ```cpp

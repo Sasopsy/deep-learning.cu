@@ -1,9 +1,9 @@
 # `cuda_kernel::linear`
 
 Performs the following the linear operation analogous to `torch.nn.functional.linear`:
-$$
+\[
 \mathbf{XW^{T} + b}  
-$$
+\]
 where $\mathbf{X} \in \mathbb{R}^{BT \times C}$ is the input, $\mathbf{W} \in \mathbb{R}^{OC \times C}$ is the weight and $\mathbf{b} \in \mathbb{R}^{1 \times C}$ is the bias.
 
 ```cpp
@@ -43,7 +43,7 @@ This implementation divides the computation into 2D tiles, with each thread bloc
 
 ## Torch Usage
 
-To use the linear kernel in a PyTorch extension, call the `linear_forward` function defined in [`torch_binding.cuh`](../../csrc/kernels/linear/torch_binding.cuh) in the . The function signature is:
+To use the linear kernel in a PyTorch extension, call the `linear_forward` function defined in [`torch_binding.cuh`](../../csrc/kernels/linear/torch_binding.cuh). The function signature is:
 
 ```cpp
 torch::Tensor linear_forward(torch::Tensor input, torch::Tensor weight, torch::Tensor bias, int kernel_choice = LINEAR_DEFAULT_KERNEL);

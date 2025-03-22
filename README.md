@@ -2,10 +2,15 @@
 
 This repository contains CUDA implementations of various deep learning operations with Python bindings for PyTorch.
 
+<!-- Add MathJax script -->
+<script type="text/javascript" async
+  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML">
+</script>
+
 ## Implemented Kernels (Tested)
 
 - [LayerNorm](csrc/kernels/layernorm)
-- [Linear](csrc/kernels/linear) ($\mathbf{XW^{T}}$)
+- [Linear](csrc/kernels/linear) (\( \mathbf{XW^{T}} \))
 - [Softmax](csrc/kernels/softmax)
 - [Residual](csrc/kernels/residual)
 - [Flash Attention](csrc/kernels/attention/flash_attention)

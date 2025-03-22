@@ -1,9 +1,9 @@
 # `cuda_kernel::layernorm`
 
 Performs layer normalization analogous with inputs of shape $(...,C)$ across the `-1` dimension analogous to `torch.nn.functional.layer_norm`:
-$$
+\[
 \mathbf{Y} = \frac{\mathbf{X} - \mu}{\sqrt{\sigma^2 + \epsilon}} \cdot \gamma + \beta
-$$
+\]
 where $\mathbf{X} \in \mathbb{R}^{N \times C}$ is the input, $\mu \in \mathbb{R}^{N}$ is the mean, $\sigma^2 \in \mathbb{R}^{N}$ is the variance, $\epsilon$ is a small constant for numerical stability, $\gamma \in \mathbb{R}^{C}$ is the weight, and $\beta \in \mathbb{R}^{C}$ is the bias.
 
 ```cpp
