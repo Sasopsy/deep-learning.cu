@@ -10,6 +10,8 @@ This repository contains CUDA implementations of various deep learning operation
 - [Residual](csrc/kernels/residual)
 - [Flash Attention](csrc/kernels/attention/flash_attention)
 
+Check out the [docs](docs/kernels) for more details.
+
 ## Installation
 
 ### Requirements
