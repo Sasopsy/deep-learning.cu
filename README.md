@@ -5,7 +5,7 @@ This repository contains CUDA implementations of various deep learning operation
 ## Implemented Kernels (Tested)
 
 - [LayerNorm](csrc/kernels/layernorm)
-- [Linear](csrc/kernels/linear) (\( \mathbf{XW^{T}} \))
+- [Linear](csrc/kernels/linear) ($\mathbf{XW^{T}}$)
 - [Softmax](csrc/kernels/softmax)
 - [Residual](csrc/kernels/residual)
 - [Flash Attention](csrc/kernels/attention/flash_attention)

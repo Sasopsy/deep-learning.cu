@@ -1,7 +1,9 @@
 # `cuda_kernel::softmax`
 
 Calculates softmax scores of inputs with shape $(...,C)$ across the `-1` dimension:
+
 $$\mathbf{Y}_{ij} = \frac{e^{\mathbf{X}_{ij}}}{\sum_{k} e^{\mathbf{X}_{ik}}}$$
+
 where $\mathbf{X} \in \mathbb{R}^{N \times C}$ is the input and $\mathbf{Y} \in \mathbb{R}^{N \times C}$ is the output.
 
 ```cpp
