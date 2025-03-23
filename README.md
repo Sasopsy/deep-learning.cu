@@ -2,11 +2,6 @@
 
 This repository contains CUDA implementations of various deep learning operations with Python bindings for PyTorch.
 
-<!-- Add MathJax script -->
-<script type="text/javascript" async
-  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML">
-</script>
-
 ## Implemented Kernels (Tested)
 
 - [LayerNorm](csrc/kernels/layernorm)
@@ -57,5 +52,9 @@ output = dlcu.flash_attention_forward(q, k, v)
 ## Testing
 
 See [PyTorch tests README](tests/torch/README.md) and [C++ tests README](tests/cpp/README.md) for testing instructions.
+
+## Documentation
+
+For detailed documentation, visit our [GitHub Pages site](https://sasopsy.github.io/deep-learning.cu/).
 
 

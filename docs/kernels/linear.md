@@ -1,9 +1,7 @@
 # `cuda_kernel::linear`
 
 Performs the following the linear operation analogous to `torch.nn.functional.linear`:
-\[
-\mathbf{XW^{T} + b}  
-\]
+$$\mathbf{XW^{T} + b}$$
 where $\mathbf{X} \in \mathbb{R}^{BT \times C}$ is the input, $\mathbf{W} \in \mathbb{R}^{OC \times C}$ is the weight and $\mathbf{b} \in \mathbb{R}^{1 \times C}$ is the bias.
 
 ```cpp
