@@ -55,6 +55,6 @@ See [PyTorch tests README](tests/torch/README.md) and [C++ tests README](tests/c
 
 ## Documentation
 
-For detailed documentation, visit our [GitHub Pages site](https://sasopsy.github.io/deep-learning.cu/).
+For detailed documentation, visit [docs folder](docs).
 
 
